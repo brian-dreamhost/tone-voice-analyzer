@@ -6,6 +6,12 @@ import ConsistencyResult from './components/ConsistencyResult.jsx'
 const STORAGE_KEY = 'tva-voice-profile'
 const SAMPLES_KEY = 'tva-samples'
 
+const DUMMY_SAMPLES = [
+  `We believe great websites start with great hosting. That's why we've spent 25 years perfecting our platform — so you can focus on building something amazing. No complicated dashboards. No surprise fees. Just reliable, fast hosting that works.`,
+  `Your domain is your identity online. It's the first thing people see and the last thing they forget. We make it easy to find, register, and manage the perfect domain — whether you're launching your first blog or your tenth business.`,
+  `WordPress powers over 40% of the web, and we're the hosting provider WordPress itself recommends. One-click installs, automatic updates, and a support team that actually knows WordPress inside and out.`,
+]
+
 export default function App() {
   const [tab, setTab] = useState('build')
   const [samples, setSamples] = useState(['', '', ''])
@@ -63,6 +69,10 @@ export default function App() {
     setTab('build')
   }, [])
 
+  const fillTestData = () => {
+    setSamples(DUMMY_SAMPLES)
+  }
+
   const filledCount = samples.filter(s => s.trim().length > 0).length
   const canGenerate = filledCount >= 2
 
@@ -92,6 +102,16 @@ export default function App() {
             Build a voice profile from your best copy, then check new content to make sure it sounds like you. Your profile is saved locally and persists across visits.
           </p>
         </header>
+
+        <div className="flex justify-end mb-4">
+          <button
+            type="button"
+            onClick={fillTestData}
+            className="px-3 py-1.5 text-xs font-mono bg-prince/20 text-prince border border-prince/30 rounded hover:bg-prince/30 transition-colors focus:outline-none focus:ring-2 focus:ring-prince focus:ring-offset-2 focus:ring-offset-abyss"
+          >
+            Fill Test Data
+          </button>
+        </div>
 
         {/* Tabs */}
         <div className="flex gap-1 mb-8">
