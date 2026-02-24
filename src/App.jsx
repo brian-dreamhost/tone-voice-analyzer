@@ -85,7 +85,7 @@ export default function App() {
               Free Tool
             </span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+          <h1 className="text-4xl sm:text-[2.7rem] font-bold text-white mb-3">
             Tone & Voice Consistency Analyzer
           </h1>
           <p className="text-cloudy text-lg max-w-2xl">
