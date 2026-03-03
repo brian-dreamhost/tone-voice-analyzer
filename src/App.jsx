@@ -78,7 +78,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-abyss bg-glow bg-grid">
-      <div className="relative z-10 max-w-6xl mx-auto px-4 py-8 sm:py-12 animate-fadeIn">
+      <div className="relative z-10 max-w-[1600px] mx-auto px-4 py-8 sm:py-12 animate-fadeIn">
         {/* Breadcrumb */}
         <nav className="mb-8 text-sm text-galactic">
           <a href="https://seo-tools-tau.vercel.app/" className="text-azure hover:text-white transition-colors">Free Tools</a>
@@ -287,17 +287,17 @@ export default function App() {
         <section className="mt-16">
           <h2 className="text-xl font-bold text-white mb-6">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-            <div className="card-gradient border border-metal/20 rounded-2xl p-5 lg:p-6">
+            <div className="card-gradient border border-metal/20 rounded-2xl p-5 lg:p-6 hover-lift animate-slideUp" style={{ animationDelay: '0s' }}>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-prince/10 text-prince font-bold text-lg mb-3">1</div>
               <h3 className="text-white font-semibold mb-2">Build Your Profile</h3>
               <p className="text-galactic text-sm">Paste 2-3 samples of your best copy. The analyzer extracts 9 voice dimensions — formality, sentence patterns, vocabulary, and more.</p>
             </div>
-            <div className="card-gradient border border-metal/20 rounded-2xl p-5 lg:p-6">
+            <div className="card-gradient border border-metal/20 rounded-2xl p-5 lg:p-6 hover-lift animate-slideUp" style={{ animationDelay: '0.08s' }}>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-prince/10 text-prince font-bold text-lg mb-3">2</div>
               <h3 className="text-white font-semibold mb-2">Check New Copy</h3>
               <p className="text-galactic text-sm">Paste any new content — blog post, email, social caption — and the analyzer compares it against your established voice profile.</p>
             </div>
-            <div className="card-gradient border border-metal/20 rounded-2xl p-5 lg:p-6">
+            <div className="card-gradient border border-metal/20 rounded-2xl p-5 lg:p-6 hover-lift animate-slideUp" style={{ animationDelay: '0.16s' }}>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-prince/10 text-prince font-bold text-lg mb-3">3</div>
               <h3 className="text-white font-semibold mb-2">Get Actionable Feedback</h3>
               <p className="text-galactic text-sm">See a consistency score with per-dimension breakdowns and specific tips to bring off-brand copy back in line with your voice.</p>
